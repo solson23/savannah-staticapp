@@ -1,0 +1,15 @@
+{% extends '_layouts/detail-entry.njk' %}
+{% set entry = data.entries[1] %}
+
+{% block page_title %}Blog entry title{% endblock %}
+
+{% block description %}Blog entry description.{% endblock %}
+
+{% block story %}
+  <img class="img-fluid" src="img/kraken02.jpg" alt="kraken image"/>
+  <h1>{{ entry.title }}</h1>
+  <h5>Captain's log: {{ entry.date }}</h5>
+  <p>Rum trysail topsail reef sails keelhaul gabion flogging sutler splice the main brace black spot. Topgallant barkadeer measured fer yer chains hornswaggle killick pillage gangplank Gold Road reef log. Long clothes pirate topgallant list stern rope's end draft tackle Corsair driver.</p>
+
+  <p>Ballast gun main sheet Pieces of Eight port gunwalls long clothes chase Sail ho hail-shot. League red ensign spyglass Brethren of the Coast lookout boatswain spirits Jolly Roger Pirate Round hardtack. Shrouds ye to go on account hearties prow Yellow Jack run a rig booty nipper chantey.</p>
+{% endblock %}

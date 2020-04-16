@@ -7,10 +7,13 @@
 {% block content %}
 <div class="container">
   <div class="row">
-    <div class="col">
-      <h1>Main headline</h1>
-      <p>This is a <a href="detail-entry-example.html">link to a blog entry example</a> which shows a simple detail entry page example. It uses the "data-entry.njk" layout.</p>
-      <p>This is a <a href="detail-book-shipping-news.html">link to a book page example</a> which uses a more complex detail layout (detail-book.njk) where data is pulled into the layout and the page calls for a specific row in the data.</p>
+    <div class="col-sm-4 offset-sm-4">
+      <h1>Ahoy, buccanners!</h1>
+      </div>
+    </div>
+    <div class ="col-sm-8 offset-sm-2">
+      <p>Come aboard our site and explore the diary of Captain Crit McGillicutty.</p>
+      <p>In his diary entries, Capt. McGillicutty illustrates the life of a man at sea during the time of pirates, myths and a turbulent world order.</p>
       {% for entry in data.entries %}
         <h3 class="entry-headline"><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
         <p class="entry-date">{{ entry.date }}</p>

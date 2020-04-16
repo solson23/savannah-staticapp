@@ -1,0 +1,14 @@
+{% extends '_layouts/detail-entry.njk' %}
+{% set entry = data.entries[0] %}
+
+{% block page_title %}Blog entry title{% endblock %}
+
+{% block description %}Blog entry description.{% endblock %}
+
+{% block story %}
+  <img class="img-fluid" src="img/kraken01.jpg" alt="kraken image"/>
+  <h1>{{ entry.title }}</h1>
+  <h5>Captain's log: {{ entry.date }}</h5>
+  <p>Hogshead case shot draft yawl scallywag Letter of Marque keel broadside coxswain lugsail. Belay bucko parley jack wherry ye yawl barkadeer deadlights keel. Blow the man down yawl Arr swing the lead heave down spanker hornswaggle walk the plank transom pirate.
+  </p>
+{% endblock %}

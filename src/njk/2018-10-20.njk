@@ -1,0 +1,14 @@
+{% extends '_layouts/detail-entry.njk' %}
+{% set entry = data.entries[2] %}
+
+
+{% block page_title %}Blog entry title{% endblock %}
+
+{% block description %}Blog entry description.{% endblock %}
+
+{% block story %}
+  <img class="img-fluid" src="img/kraken03.jpg" alt="kraken image"/>
+  <h1>{{ entry.title }}</h1>
+  <h5>Captain's log: {{ entry.date }}</h5>
+  <p>Prow matey capstan Jolly Roger jolly boat barque jib Buccaneer nipperkin jury mast. Booty sloop squiffy reef pillage galleon hands handsomely hail-shot fire in the hole. Splice the main brace pink trysail sloop hornswaggle maroon Shiver me timbers list case shot Jolly Roger. Lee rutters Nelsons folly main sheet smartly mutiny gangway crack Jennys tea cup clipper gabion. Lad booty hempen halter prow execution dock topgallant cutlass swing the lead scuttle gangway.</p>
+{% endblock %}
